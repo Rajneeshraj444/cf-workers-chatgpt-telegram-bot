@@ -1,0 +1,14 @@
+name = "cf-workers-chatgpt-telegram-bot"
+main = "src/index.ts"
+compatibility_date = "2023-03-02"
+workers_dev = true
+
+kv_namespaces = [
+    { binding = "CHATGPT_TELEGRAM_BOT_KV", id = "ba9e2adbee7b429a817fb8bf9145247f" }
+]
+
+[vars]
+TELEGRAM_USERNAME_WHITELIST = "jarylc Shirleymew"
+CHATGPT_MODEL = "gpt-3.5-turbo"
+CHATGPT_BEHAVIOR = "Short, concise and accurate answers only"
+CONTEXT = 1
